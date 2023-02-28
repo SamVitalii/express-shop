@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="@cluster0.roxg3b6.mongodb.net">
+  <database-model serializer="dbm" dbms="MONGO" family-id="MONGO" format-version="4.45">
+    <root id="1">
+      <ServerVersion>5.0.14</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="admin"/>
+    <schema id="3" parent="1" name="local"/>
+    <schema id="4" parent="1" name="messages"/>
+    <schema id="5" parent="1" name="nosql"/>
+    <schema id="6" parent="1" name="shop"/>
+    <schema id="7" parent="1" name="test-messages"/>
+    <table id="8" parent="6" name="orders"/>
+    <table id="9" parent="6" name="products"/>
+    <table id="10" parent="6" name="session"/>
+    <table id="11" parent="6" name="users"/>
+    <column id="12" parent="9" name="_id">
+      <DasType>ObjectId|12s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="13" parent="9" name="description">
+      <DasType>String|12s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="14" parent="9" name="imageUrl">
+      <DasType>String|12s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="15" parent="9" name="price">
+      <DasType>Double|8s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="16" parent="9" name="title">
+      <DasType>String|12s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="17" parent="9" name="userId">
+      <DasType>ObjectId|12s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="18" parent="9" name="__v">
+      <DasType>Int32|4s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="19" parent="11" name="_id">
+      <DasType>ObjectId|12s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="20" parent="11" name="__v">
+      <DasType>Int32|4s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="21" parent="11" name="email">
+      <DasType>String|12s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="22" parent="11" name="password">
+      <DasType>String|12s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="23" parent="11" name="resetToken">
+      <DasType>String|12s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="24" parent="11" name="cart">
+      <DasType>Object|4999544s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="25" parent="11" name="favorites">
+      <DasType>Object|4999544s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="26" parent="11" name="resetTokenExpiration">
+      <DasType>ISODate|91s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="27" parent="11" name="cart.items">
+      <DasType>list|4999545s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="28" parent="11" name="favorites.items">
+      <DasType>list|4999545s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="29" parent="11" name="cart.items._id">
+      <DasType>ObjectId|12s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="30" parent="11" name="cart.items.productId">
+      <DasType>ObjectId|12s</DasType>
+      <Position>5</Position>
+    </column>
+    <column id="31" parent="11" name="cart.items.quantity">
+      <DasType>Int32|4s</DasType>
+      <Position>6</Position>
+    </column>
+  </database-model>
+</dataSource>
