@@ -5,7 +5,6 @@ const deleteProduct = async (btn, link) => {
     const productElement = btn.closest('article');
 
     try {
-        //TODO ask if is 'await(await...)' a bad practice
         const result = await fetch(`${link}${prodId}`, {
             method: 'DELETE',
             headers: {
