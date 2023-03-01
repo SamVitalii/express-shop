@@ -21,8 +21,6 @@ const MongoDbStore = ConnectMongoDbStore(session);
 
 const MONGODB_URI = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.roxg3b6.mongodb.net/${process.env.MONGO_DEFAULT_DATABASE}?retryWrites=true&w=majority`;
 
-console.log(MONGODB_URI);
-
 const app = express();
 const store = new MongoDbStore({
     uri: MONGODB_URI,
